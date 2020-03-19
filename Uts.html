@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: -77px;
+  left: 0;
+  background-color: #44749d;
+  overflow-x: hidden;
+  transition: 2s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1px;
+  color: black;
+  display: block;
+  transition: 2s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 2s;
+  padding: 16px;
+}
+
+#main1 {
+  transition: margin-left 2s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.kotak1 {
+ height: 150px;
+ width: 15%;
+ margin: 10px;
+ float: left;
+ background-color: #c6d4e1;
+ }
+.kotak2 {
+ height: 300px;
+ width: 64%;
+ margin: 10px;
+ float: left;
+ background-color: #c6d4e1;
+ }
+ .kotak3 {
+ height: 130px;
+ width: 64%;
+ margin: 10px;
+ float: left;
+ background-color: #c6d4e1;
+ }
+
+   
+
+ .kotak4 {
+ height: 330px;
+ width: 200PX;
+ margin-top: -480px;
+ float: left;
+ background-color: #ebe7e0;
+ }
+
+ .kotak5 {
+ height: 270px;
+ width: 200PX;
+ margin-top: -130px;
+ float: left;
+ background-color: #ebe7e0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav" id="mySidenav">
+            <span style="font-size: 15px; cursor: pointer; float: right; margin-top: 37px;" onclick="closeNav()">&#x2715;</span>
+            <ul style="height: 5%; background-color: #c6d4e1;">
+            </ul>
+        </div>
+
+        <div class="container">
+            <div id="main">
+                <span class="button" id="button" style="font-size: 30px;margin-left:-20px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+                <div class="main" id="main">
+                <div class="kotak1"></div>
+                <div class="kotak1"></div>
+                <div class="kotak1"></div>
+                <div class="kotak1"></div>
+                <div class="kotak2"></div>
+                <div class="kotak3"></div>
+            </div>
+            <div class="main1">
+                <div class="kotak4"></div>
+                <div class="kotak5"></div>
+            </div>
+        </div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
